@@ -42,10 +42,10 @@ function startup(){
 		}
 
 	}
-
+	
 	loader.loadWithAnimation(
-		'./assets/paimon.pmx',
-		'./assets/paimon-idle.vmd',
+		'./model/paimon.pmx',
+		'./model/paimon-idle.vmd',
 		function ( mmd ) {
 			
 			scene.add( mmd.mesh );
