@@ -17,7 +17,7 @@ renderer.setPixelRatio(window.devicePixelRatio)
 renderer.setSize(window.innerWidth, window.innerHeight)
 
 //Background
-const space = new THREE.TextureLoader().load('./bg.jpg')
+const space = new THREE.TextureLoader().load('./bg.png')
 scene.background = space
 
 const ambientLight = new THREE.AmbientLight(0xffffff)
@@ -52,7 +52,7 @@ async function startup(){
 			
 			mmd.mesh.position.set(0, -10, -25)
 
-			new THREE.AudioLoader().load(
+			/*new THREE.AudioLoader().load(
 				'./model/CaliforniaGurls.wav',
 				function ( buffer ) {
 	
@@ -63,10 +63,11 @@ async function startup(){
 	
 					scene.add( audio );
 					scene.add( listener );
-	
+					audio.play()
+					audio.loop()
 				}
 	
-			);
+			);*/
 		},
 		function( xhr ) {
 			if ( xhr.lengthComputable ) {

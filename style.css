@@ -8,6 +8,10 @@ canvas{
     padding: 0%;
     font-family: Arial, Helvetica, sans-serif;
 }
+@font-face {
+    font-family: genshinFont;
+    src: url(./fonts/zh-cn.ttf);
+}
 .logo{
     flex-basis: 20%;
 }
@@ -31,11 +35,9 @@ nav{
     background-color: #333;
     flex-direction: row-reverse;
 }
-
 .navbar {
     float: left;
     overflow: hidden;
-    
     background-color: #333;
 }
 .navbar a {
@@ -46,7 +48,80 @@ nav{
     padding: 14px 16px;
     text-decoration: none;
 }
-.info{
+textBox1{
+    position: absolute;
+    border: 0px solid #fff;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 150px;
+    width: 400px;
+    top: 100px;
+    left: 50px;
+    overflow: hidden;
+}
+textBox2{
+    position: absolute;
+    border: 0px solid #fff;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 965px;
+    width: 400px;
+    top: 300px;
+    right: 50px;
+    overflow: hidden;
+}
+textBox3{
+    position: absolute;
+    border: 0px solid #fff;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 460px;
+    width: 400px;
+    top: 700px;
+    left: 50px;
+    overflow: hidden;
+}
+.box1{
+    font-family: genshinFont;
+    background-color: yellow;
+    height: 30px;
+    font-size: 25px;
     text-align: center;
-    color: white;
+}
+.boxContent1{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    font-family: genshinFont;
+    text-align: left;
+}
+.box2{
+    right: 100px;
+    font-family: genshinFont;
+    background-color: yellow;
+    height: 30px;
+    font-size: 25px;
+    text-align: center;
+}
+.boxContent2{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    font-family: genshinFont;
+    text-align: left;
+}
+.box3{
+    right: 100px;
+    font-family: genshinFont;
+    background-color: yellow;
+    height: 30px;
+    font-size: 25px;
+    text-align: center;
+}
+.boxContent3{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    font-family: genshinFont;
+    text-align: left;
 }
